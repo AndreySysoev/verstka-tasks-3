@@ -6,13 +6,172 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!-- Поле для фильтрации по городу -->
-        <input
-            type="text"
-            placeholder="Город отправления"
-            value=""
-            onkeyup="this.setAttribute('value', this.value)">
-
-        <!-- Здесь применять вашу самую сильную магию -->
+        <table>
+            <tr>
+                <th>Тип</th>
+                <th>№ рейса</th>
+                <th colspan="2">Компания</th>
+                <th>Тип ВС</th>
+                <th>Аэропорт</th>
+                <th>Время вылета/прилёта</th>
+                <th>Терминал</th>
+                <th>Статус</th>
+            </tr>
+            <tr class="out c">
+                <td>Отправление</td>
+                <td>3578</td>
+                <td>AirLines</td>
+                <td></td>
+                <td>319</td>
+                <td>Кольцово</td>
+                <td>13:25</td>
+                <td>В</td>
+                <td>Регистрация</td>
+            </tr>
+            <tr class="out c">
+                <td>Прибытие</td>
+                <td>8482</td>
+                <td>Аэрофлот</td>
+                <td></td>
+                <td>Ту-134</td>
+                <td>Новый Уренгой</td>
+                <td>12:30</td>
+                <td>С</td>
+                <td></td>
+            </tr>
+            <tr class="out d">
+                <td>Отправление</td>
+                <td>3703</td>
+                <td>AirLines</td>
+                <td></td>
+                <td>319</td>
+                <td>Пулково (Санкт-Петербург)</td>
+                <td>17:00</td>
+                <td>В</td>
+                <td>Регистрация</td>
+            </tr>
+            <tr class="in d">
+                <td>Прибытие</td>
+                <td>2494</td>
+                <td>ЮТэйр</td>
+                <td></td>
+                <td>Ил-18</td>
+                <td>Кольцово</td>
+                <td>08:10</td>
+                <td>С</td>
+                <td>Посадка</td>>
+            </tr>
+            <tr class="in c">
+                <td>Отправление</td>
+                <td>2482</td>
+                <td>Аэрофлот</td>
+                <td></td>
+                <td>Ту-134</td>
+                <td>Пулково (Санкт-Петербург)</td>
+                <td>09:15</td>
+                <td>А</td>
+                <td>Регистрация</td>
+            </tr>
+            <tr class="in c">
+                <td>Отправление</td>
+                <td>1297</td>
+                <td>ЮТэйр</td>
+                <td></td>
+                <td>Ил-18</td>
+                <td>Кольцово</td>
+                <td>19:40</td>
+                <td>В</td>
+                <td></td>
+            </tr>
+            <tr class="in d">
+                <td>Прибытие</td>
+                <td>4693</td>
+                <td>AirLines</td>
+                <td></td>
+                <td>319</td>
+                <td>Новый Уренгой</td>
+                <td>17:55</td>
+                <td>С</td>
+                <td></td>
+            </tr>
+            <tr class="in d">
+                <td>Отправление</td>
+                <td>2258</td>
+                <td>ЮТэйр</td>
+                <td></td>
+                <td>Ил-18</td>
+                <td>Внуково</td>
+                <td>10:40</td>
+                <td>В</td>
+                <td>Регистрация</td>
+            </tr>
+            <tr class="out c">
+                <td>Прибытие</td>
+                <td>9736</td>
+                <td>Аэрофлот</td>
+                <td></td>
+                <td>Ту-134</td>
+                <td>Кольцово</td>
+                <td>04:30</td>
+                <td>С</td>
+                <td>Посадка</td>
+            </tr>
+            <tr class="in d">
+                <td>Прибытие</td>
+                <td>8649</td>
+                <td>ЮТэйр</td>
+                <td></td>
+                <td>Ил-18</td>
+                <td>Внуково</td>
+                <td>7:50</td>
+                <td>А</td>
+                <td>Посадка</td>
+            </tr>
+            <tr class="in c">
+                <td>Отправление</td>
+                <td>2953</td>
+                <td>Аэрофлот</td>
+                <td></td>
+                <td>Ту-134</td>
+                <td>Новый Уренгой</td>
+                <td>14:00</td>
+                <td>В</td>
+                <td>Регистрация</td>
+            </tr>
+            <tr class="out d">
+                <td>Отправление</td>
+                <td>6426</td>
+                <td>AirLines</td>
+                <td></td>
+                <td>319</td>
+                <td>Кольцово</td>
+                <td>18:30</td>
+                <td>С</td>
+                <td>Регистрация</td>
+            </tr>
+            <tr class="in c">
+                <td>Отправление</td>
+                <td>7943</td>
+                <td>Аэрофлот</td>
+                <td></td>
+                <td>Ту-134</td>
+                <td>Кольцово</td>
+                <td>01:30</td>
+                <td>С</td>
+                <td>Регистрация</td>
+            </tr>
+        </table>
+        <br>
+        <form>
+            <fieldset>
+                <legend>Отправить данные о рейсе на телефон</legend>
+                <input id="email" name="email" type="email" placeholder="Email" required><br>
+                <br>
+                <input id="phone" name="phone" type="phone" placeholder="Телефон"
+                pattern="^(\+7|8)\d{10}$" required><br>
+                <br>
+                <button type="submit">Отправить</button>
+            </fieldset>
+        </form>
     </body>
 </html>
