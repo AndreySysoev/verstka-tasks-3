@@ -41,7 +41,7 @@ td:hover::after
 }
 
 tr:nth-child(even)
-td:first-child::before 
+td:first-child::before
 {
     content: "";
     position: absolute;
@@ -53,23 +53,23 @@ td:first-child::before
     z-index: -10;
 }
 
-td:hover 
+td:hover
 {
     background-color: #47a5e6;
     border: 2px solid white;
 }
 
-form 
+form
 {
     width: 300px;
 }
 
-input 
+input
 {
     font-size: 16px;
 }
 
-input:invalid 
+input:invalid
 {
     border-color: red;
 }
