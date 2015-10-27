@@ -17,14 +17,14 @@ table
 table>tbody>tr>td 
 {
     padding: 10px;
-    font-size: 14px;
+    font-size: 15px;
     position: relative;
 }
 
 table>tbody>tr:hover 
 {
     padding: 20px;
-    background-color: #47a5e6 !important;
+    background-color: #47a5e6;
     color: white;
 }
 
@@ -41,7 +41,7 @@ td:hover::after
 }
 
 tr:nth-child(even)
-td:first-child::before
+td:first-child::before 
 {
     content: "";
     position: absolute;
@@ -53,23 +53,23 @@ td:first-child::before
     z-index: -10;
 }
 
-td:hover
+td:hover 
 {
     background-color: #47a5e6;
     border: 2px solid white;
 }
 
-form
+form 
 {
     width: 300px;
 }
 
-input
+input 
 {
     font-size: 16px;
 }
 
-input:invalid
+input:invalid 
 {
     border-color: red;
 }
@@ -79,7 +79,7 @@ button
     visibility: hidden;
 }
 
-input:valid + br + br+ input:valid + br + br + button 
+form:valid ~ br ~ br~ form:valid ~ br ~ br ~ button 
 {
     visibility: visible;
 }
